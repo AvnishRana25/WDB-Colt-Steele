@@ -7,26 +7,32 @@
   </head>
   <body>
     <h1>Information Form</h1>
+
+    <!-- name attribute is used to give the information back to the server -->
+
+    <form action = //anything>
     <p>
     <label for="username"> Enter your Username:</label>
-    <form><input type="text" placeholder="username" id="username" /></form>
+    <input type="text" placeholder="username" id="username" name = "username"/>  
     </p>
     <p>
     <label for="pass"> Enter your Password:</label>
-    <form><input type="password" placeholder="password" id="pass" /></form>
+    <input type="password" placeholder="password" id="pass" username = "password" name = "password"/>
     </p>
     <p>
     <label for="gender"> Enter your Gender:</label>
-    <form><input type="text" placeholder="Gender" id="Gender" /></form>
+    <input type="text" placeholder="Gender" id="Gender" name = "Gender"/>
     </p> 
     <p>  
     <label for="DOB"> Enter your Date of Birth:</label>
-    <form><input type="date" placeholder="DD/MM/YYYY" id="DOB" /></form>
+    <form><input type="date" placeholder="DD/MM/YYYY" id="DOB"  name = "date"/>  
     </p>
     <p>
     <label for="color"> Enter your favourite color:</label>
-    <form><input type="color" placeholder="username" id="color" /></form>
+    <input type="color" placeholder="username" id="color" />
     </p>
+    <button> Submit the form.</button>
+  </form>
   </body>
 </html>
  
