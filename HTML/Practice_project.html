@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service and Preference Form</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>Survey and Preference form for Defence Aspirants</h1>
+      <hr />
+    </div>
+
+    <form action="/upsc">
+      <div>
+        <p>Enter your Details:</p>
+        <div>
+          <label for="nm">Name</label>
+          <input
+            type="name"
+            id="nm"
+            name="nm"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+
+        <br />
+        <br />
+
+        <div>
+          <label for="mail">Email</label>
+          <input
+            type="email"
+            id="mail"
+            name="mail"
+            placeholder="Enter Your Email"
+            required
+          />
+        </div>
+
+        <br />
+        <br />
+
+        <div>
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" required min="18" max="45" />
+        </div>
+
+        <div>
+          <p>How sure are you to Join defence?</p>
+
+          <br />
+
+          <input type="radio" id="choice" name="choice" value="Definately" />
+          <label for="choice">Definately</label>
+
+          <br />
+
+          <input type="radio" id="choice" name="choice" value="Maybe" />
+          <label for="choice">Maybe</label>
+
+          <br />
+
+          <input type="radio" id="choice" name="choice" value="Not sure" />
+          <label for="choice">Not Sure</label>
+
+          <br />
+        </div>
+
+        <div>
+          <p>Services Available</p>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2">Army</th>
+                <th colspan="2">Airforce</th>
+                <th rowspan="2">Navy</th>
+              </tr>
+              <th>Flying</th>
+              <th>Ground Duty</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Any stream</td>
+                <td>Maths and physics</td>
+                <td>Maths and physics</td>
+                <td>Maths and physics</td>
+              </tr>
+
+              <tr>
+                <td align="middle">SSB</td>
+                <td align="middle">AFSB</td>
+                <td align="middle">AFSB</td>
+                <td align="middle">NSB</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <br />
+        <br />
+
+        <div>
+          <label for="service">Choose your service wisely: </label>
+          <select id="service" name="service" required>
+            <option value="Airforce">Airforce</option>
+            <option value="Army">Army</option>
+            <option value="Navy">Navy</option>
+          </select>
+        </div>
+
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
